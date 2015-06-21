@@ -19588,13 +19588,12 @@ adjustable filter coil, type K</description>
 <part name="L1" library="UD27" deviceset="71K1-" device="2-4"/>
 <part name="GND30" library="supply1" deviceset="GND" device=""/>
 <part name="GND31" library="supply1" deviceset="GND" device=""/>
-<part name="SV1" library="con-lstb" deviceset="MA06-1" device=""/>
+<part name="LED" library="con-lstb" deviceset="MA06-1" device=""/>
 <part name="R23" library="rcl" deviceset="R-EU_" device="0207/7" value="470R"/>
 <part name="R24" library="rcl" deviceset="R-EU_" device="0207/7" value="470R"/>
 <part name="R25" library="rcl" deviceset="R-EU_" device="0207/7" value="470R"/>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY16" library="supply2" deviceset="+5V" device=""/>
-<part name="C27" library="rcl" deviceset="CPOL-EU" device="E5-8.5" value="470u"/>
 </parts>
 <sheets>
 <sheet>
@@ -19744,13 +19743,12 @@ adjustable filter coil, type K</description>
 <instance part="L1" gate="G$2" x="-6.096" y="87.122"/>
 <instance part="GND30" gate="1" x="-11.176" y="71.882"/>
 <instance part="GND31" gate="1" x="-1.016" y="71.882"/>
-<instance part="SV1" gate="1" x="119.38" y="-10.16" rot="R180"/>
+<instance part="LED" gate="1" x="119.38" y="-10.16" rot="R180"/>
 <instance part="R23" gate="G$1" x="96.52" y="-2.54"/>
 <instance part="R24" gate="G$1" x="96.52" y="-7.62"/>
 <instance part="R25" gate="G$1" x="96.52" y="-12.7"/>
 <instance part="GND32" gate="1" x="109.22" y="-22.86"/>
 <instance part="SUPPLY16" gate="+5V" x="91.44" y="0"/>
-<instance part="C27" gate="G$1" x="17.78" y="109.22"/>
 </instances>
 <busses>
 </busses>
@@ -19793,11 +19791,8 @@ adjustable filter coil, type K</description>
 <pinref part="JP4" gate="G$1" pin="1"/>
 <wire x1="-5.08" y1="114.3" x2="5.08" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="114.3" x2="5.08" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="104.14" x2="17.78" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="104.14" x2="22.86" y2="104.14" width="0.1524" layer="91"/>
 <junction x="22.86" y="104.14"/>
-<pinref part="C27" gate="G$1" pin="-"/>
-<wire x1="17.78" y1="104.14" x2="22.86" y2="104.14" width="0.1524" layer="91"/>
-<junction x="17.78" y="104.14"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
@@ -19995,16 +19990,16 @@ adjustable filter coil, type K</description>
 <pinref part="GND30" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="1" pin="2"/>
+<pinref part="LED" gate="1" pin="2"/>
 <wire x1="111.76" y1="-5.08" x2="109.22" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="GND32" gate="1" pin="GND"/>
 <wire x1="109.22" y1="-5.08" x2="109.22" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="1" pin="6"/>
+<pinref part="LED" gate="1" pin="6"/>
 <wire x1="109.22" y1="-10.16" x2="109.22" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="-15.24" x2="109.22" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="-15.24" x2="109.22" y2="-15.24" width="0.1524" layer="91"/>
 <junction x="109.22" y="-15.24"/>
-<pinref part="SV1" gate="1" pin="4"/>
+<pinref part="LED" gate="1" pin="4"/>
 <wire x1="111.76" y1="-10.16" x2="109.22" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="109.22" y="-10.16"/>
 </segment>
@@ -20153,12 +20148,8 @@ adjustable filter coil, type K</description>
 <wire x1="27.94" y1="111.76" x2="27.94" y2="114.3" width="0.1524" layer="91"/>
 <junction x="27.94" y="114.3"/>
 <pinref part="JP4" gate="G$1" pin="2"/>
-<wire x1="-5.08" y1="116.84" x2="17.78" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="116.84" x2="22.86" y2="116.84" width="0.1524" layer="91"/>
 <junction x="22.86" y="116.84"/>
-<pinref part="C27" gate="G$1" pin="+"/>
-<wire x1="17.78" y1="116.84" x2="22.86" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="116.84" x2="17.78" y2="111.76" width="0.1524" layer="91"/>
-<junction x="17.78" y="116.84"/>
 </segment>
 <segment>
 <pinref part="D1" gate="G$1" pin="C"/>
@@ -20678,21 +20669,21 @@ adjustable filter coil, type K</description>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="SV1" gate="1" pin="1"/>
+<pinref part="LED" gate="1" pin="1"/>
 <pinref part="R23" gate="G$1" pin="2"/>
 <wire x1="111.76" y1="-2.54" x2="101.6" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="SV1" gate="1" pin="3"/>
+<pinref part="LED" gate="1" pin="3"/>
 <pinref part="R24" gate="G$1" pin="2"/>
 <wire x1="111.76" y1="-7.62" x2="101.6" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="SV1" gate="1" pin="5"/>
+<pinref part="LED" gate="1" pin="5"/>
 <pinref part="R25" gate="G$1" pin="2"/>
 <wire x1="111.76" y1="-12.7" x2="101.6" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
