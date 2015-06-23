@@ -19540,7 +19540,7 @@ adjustable filter coil, type K</description>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="C18" library="rcl" deviceset="C-EU" device="025-025X050" value="100n"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
-<part name="R14" library="rcl" deviceset="R-EU_" device="0207/7" value="470R"/>
+<part name="R14" library="rcl" deviceset="R-EU_" device="0309/12" value="470R"/>
 <part name="SV2" library="con-lstb" deviceset="MA03-1" device=""/>
 <part name="C19" library="rcl" deviceset="C-EU" device="025-025X050" value="100n"/>
 <part name="R15" library="rcl" deviceset="R-EU_" device="0207/7" value="470R"/>
