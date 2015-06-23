@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -593,9 +593,9 @@
 <wire x1="10.16" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
 <text x="2.54" y="-12.7" size="1.27" layer="94">Opto Receiver</text>
-<pin name="VCC" x="0" y="15.24" length="middle" rot="R270"/>
-<pin name="GND" x="0" y="-15.24" length="middle" rot="R90"/>
-<pin name="OUTPUT" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="VCC" x="0" y="15.24" visible="pin" length="middle" direction="pwr" rot="R270"/>
+<pin name="GND" x="0" y="-15.24" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="OUTPUT" x="15.24" y="0" visible="pin" length="middle" direction="out" rot="R180"/>
 </symbol>
 <symbol name="OPTP-TRANSMITTER">
 <wire x1="-7.62" y1="-5.08" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
@@ -947,7 +947,7 @@ Specs @ http://www.analog.com/en/digital-to-analog-converters/digital-potentiome
 </device>
 </devices>
 </deviceset>
-<deviceset name="IFD95">
+<deviceset name="IFD95" prefix="OP">
 <description>IF-D95T Photologic Detector with Totem-Pole Output.
 
 Fiber Optic Receiver with push-pull output. May also work with IF-D97 and IF-D98 receivers.

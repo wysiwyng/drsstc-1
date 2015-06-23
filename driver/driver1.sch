@@ -15812,28 +15812,6 @@ Based on the following sources:
 </package>
 </packages>
 <symbols>
-<symbol name="UCC27423">
-<pin name="ENA" x="-10.16" y="10.16" length="middle"/>
-<pin name="INA" x="-10.16" y="5.08" length="middle"/>
-<pin name="GND" x="-10.16" y="0" length="middle"/>
-<pin name="INB" x="-10.16" y="-5.08" length="middle"/>
-<pin name="OUTB" x="22.86" y="-5.08" length="middle" rot="R180"/>
-<pin name="VDD" x="22.86" y="0" length="middle" rot="R180"/>
-<pin name="OUTA" x="22.86" y="5.08" length="middle" rot="R180"/>
-<pin name="ENB" x="22.86" y="10.16" length="middle" rot="R180"/>
-<wire x1="-5.08" y1="15.24" x2="17.78" y2="15.24" width="0.254" layer="94"/>
-<wire x1="17.78" y1="15.24" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="15.24" width="0.254" layer="94"/>
-<wire x1="2.54" y1="7.62" x2="2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="2.54" y2="7.62" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-7.62" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
-<circle x="8.128" y="5.08" radius="0.508" width="0.254" layer="94"/>
-<circle x="8.128" y="-5.08" radius="0.508" width="0.254" layer="94"/>
-</symbol>
 <symbol name="TL3116">
 <wire x1="-3.81" y1="3.175" x2="-3.81" y2="1.905" width="0.1524" layer="94"/>
 <wire x1="-4.445" y1="2.54" x2="-3.175" y2="2.54" width="0.1524" layer="94"/>
@@ -15891,31 +15869,31 @@ Based on the following sources:
 <pin name="V+" x="0" y="7.62" visible="pad" length="short" direction="pwr" rot="R270"/>
 <pin name="V-" x="0" y="-7.62" visible="pad" length="short" direction="pwr" rot="R90"/>
 </symbol>
+<symbol name="UCC27423">
+<pin name="ENA" x="-10.16" y="10.16" length="middle"/>
+<pin name="INA" x="-10.16" y="5.08" length="middle"/>
+<pin name="GND" x="-10.16" y="0" length="middle"/>
+<pin name="INB" x="-10.16" y="-5.08" length="middle"/>
+<pin name="OUTB" x="22.86" y="-5.08" length="middle" rot="R180"/>
+<pin name="VDD" x="22.86" y="0" length="middle" rot="R180"/>
+<pin name="OUTA" x="22.86" y="5.08" length="middle" rot="R180"/>
+<pin name="ENB" x="22.86" y="10.16" length="middle" rot="R180"/>
+<wire x1="-5.08" y1="15.24" x2="17.78" y2="15.24" width="0.254" layer="94"/>
+<wire x1="17.78" y1="15.24" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="15.24" width="0.254" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<circle x="8.128" y="5.08" radius="0.508" width="0.254" layer="94"/>
+<circle x="8.128" y="-5.08" radius="0.508" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="UCC27423">
-<gates>
-<gate name="G$1" symbol="UCC27423" x="-5.08" y="-2.54"/>
-</gates>
-<devices>
-<device name="" package="DIL8">
-<connects>
-<connect gate="G$1" pin="ENA" pad="1"/>
-<connect gate="G$1" pin="ENB" pad="8"/>
-<connect gate="G$1" pin="GND" pad="3"/>
-<connect gate="G$1" pin="INA" pad="2"/>
-<connect gate="G$1" pin="INB" pad="4"/>
-<connect gate="G$1" pin="OUTA" pad="7"/>
-<connect gate="G$1" pin="OUTB" pad="5"/>
-<connect gate="G$1" pin="VDD" pad="6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TL3116">
+<deviceset name="TL3116" prefix="IC">
 <gates>
 <gate name="G$1" symbol="TL3116" x="2.54" y="0"/>
 </gates>
@@ -15937,7 +15915,7 @@ Based on the following sources:
 </device>
 </devices>
 </deviceset>
-<deviceset name="LM311N">
+<deviceset name="LM311N" prefix="IC">
 <gates>
 <gate name="G$1" symbol="LM311" x="0" y="0"/>
 </gates>
@@ -15952,6 +15930,28 @@ Based on the following sources:
 <connect gate="G$1" pin="OUT" pad="7"/>
 <connect gate="G$1" pin="V+" pad="8"/>
 <connect gate="G$1" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="UCC27423" prefix="IC">
+<gates>
+<gate name="G$1" symbol="UCC27423" x="-5.08" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="DIL8">
+<connects>
+<connect gate="G$1" pin="ENA" pad="1"/>
+<connect gate="G$1" pin="ENB" pad="8"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="INA" pad="2"/>
+<connect gate="G$1" pin="INB" pad="4"/>
+<connect gate="G$1" pin="OUTA" pad="7"/>
+<connect gate="G$1" pin="OUTB" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -18451,63 +18451,6 @@ W = angled&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="BillPorter">
-<packages>
-<package name="OPTO-RECEIVER">
-<wire x1="-3.5" y1="3.5" x2="-3.5" y2="-2" width="0.127" layer="21"/>
-<wire x1="-3.5" y1="3.5" x2="3.7" y2="3.5" width="0.127" layer="21"/>
-<wire x1="3.7" y1="3.5" x2="3.7" y2="-1.8" width="0.127" layer="21"/>
-<wire x1="-3.5" y1="-2" x2="-2.3" y2="-7.6" width="0.127" layer="21"/>
-<wire x1="-2.3" y1="-7.6" x2="2.4" y2="-7.6" width="0.127" layer="21"/>
-<wire x1="2.4" y1="-7.6" x2="3.7" y2="-1.8" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="1.9" width="0.127" layer="51"/>
-<pad name="P$2" x="0" y="0" drill="0.7" shape="square"/>
-<pad name="P$1" x="1.9" y="0" drill="0.7" shape="square"/>
-<pad name="P$3" x="-1.9" y="0" drill="0.7" shape="square"/>
-<rectangle x1="-2.7" y1="3.6" x2="2.9" y2="14.9" layer="51"/>
-<rectangle x1="-4.1" y1="5.9" x2="4.3" y2="14.9" layer="51"/>
-<hole x="-2.4" y="2.5" drill="1.6"/>
-<hole x="2.6" y="2.5" drill="1.6"/>
-<hole x="0.1" y="-5.1" drill="3.2"/>
-</package>
-</packages>
-<symbols>
-<symbol name="OPTO-RECEIVER">
-<wire x1="-5.08" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
-<text x="2.54" y="-12.7" size="1.27" layer="94">Opto Receiver</text>
-<pin name="VCC" x="0" y="15.24" length="middle" rot="R270"/>
-<pin name="GND" x="0" y="-15.24" length="middle" rot="R90"/>
-<pin name="OUTPUT" x="15.24" y="0" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="IFD95">
-<description>IF-D95T Photologic Detector with Totem-Pole Output.
-
-Fiber Optic Receiver with push-pull output. May also work with IF-D97 and IF-D98 receivers.
-
-Spec sheet @ http://www.i-fiberoptics.com/pdf/IFD95.pdf</description>
-<gates>
-<gate name="G$1" symbol="OPTO-RECEIVER" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="OPTO-RECEIVER">
-<connects>
-<connect gate="G$1" pin="GND" pad="P$1"/>
-<connect gate="G$1" pin="OUTPUT" pad="P$2"/>
-<connect gate="G$1" pin="VCC" pad="P$3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="pinhead">
 <description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -19451,6 +19394,63 @@ adjustable filter coil, type K</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="BillPorter">
+<packages>
+<package name="OPTO-RECEIVER">
+<wire x1="-3.5" y1="3.5" x2="-3.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="3.5" x2="3.7" y2="3.5" width="0.127" layer="21"/>
+<wire x1="3.7" y1="3.5" x2="3.7" y2="-1.8" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-2" x2="-2.3" y2="-7.6" width="0.127" layer="21"/>
+<wire x1="-2.3" y1="-7.6" x2="2.4" y2="-7.6" width="0.127" layer="21"/>
+<wire x1="2.4" y1="-7.6" x2="3.7" y2="-1.8" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="1.9" width="0.127" layer="51"/>
+<pad name="P$2" x="0" y="0" drill="0.7" shape="square"/>
+<pad name="P$1" x="1.9" y="0" drill="0.7" shape="square"/>
+<pad name="P$3" x="-1.9" y="0" drill="0.7" shape="square"/>
+<rectangle x1="-2.7" y1="3.6" x2="2.9" y2="14.9" layer="51"/>
+<rectangle x1="-4.1" y1="5.9" x2="4.3" y2="14.9" layer="51"/>
+<hole x="-2.4" y="2.5" drill="1.6"/>
+<hole x="2.6" y="2.5" drill="1.6"/>
+<hole x="0.1" y="-5.1" drill="3.2"/>
+</package>
+</packages>
+<symbols>
+<symbol name="OPTO-RECEIVER">
+<wire x1="-5.08" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
+<text x="2.54" y="-12.7" size="1.27" layer="94">Opto Receiver</text>
+<pin name="VCC" x="0" y="15.24" visible="pin" length="middle" direction="pwr" rot="R270"/>
+<pin name="GND" x="0" y="-15.24" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="OUTPUT" x="15.24" y="0" visible="pin" length="middle" direction="out" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="IFD95" prefix="OP">
+<description>IF-D95T Photologic Detector with Totem-Pole Output.
+
+Fiber Optic Receiver with push-pull output. May also work with IF-D97 and IF-D98 receivers.
+
+Spec sheet @ http://www.i-fiberoptics.com/pdf/IFD95.pdf</description>
+<gates>
+<gate name="G$1" symbol="OPTO-RECEIVER" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="OPTO-RECEIVER">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$1"/>
+<connect gate="G$1" pin="OUTPUT" pad="P$2"/>
+<connect gate="G$1" pin="VCC" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -19480,7 +19480,6 @@ adjustable filter coil, type K</description>
 <part name="IC4" library="74xx-eu" deviceset="74*08" device="N" technology="HC"/>
 <part name="IC3" library="74xx-eu" deviceset="74*14" device="N" technology="HC"/>
 <part name="IC5" library="74xx-eu" deviceset="74*74" device="N" technology="HC"/>
-<part name="U$1" library="driver" deviceset="UCC27423" device=""/>
 <part name="Q1" library="transistor-power" deviceset="PMOSFET_N" device="TO220BV"/>
 <part name="Q3" library="transistor-power" deviceset="PMOSFET_P" device="TO220BV"/>
 <part name="D1" library="diode" deviceset="1N4148" device="DO35-7"/>
@@ -19533,7 +19532,6 @@ adjustable filter coil, type K</description>
 <part name="D9" library="diode" deviceset="DIODE-" device="D-7.5"/>
 <part name="R12" library="rcl" deviceset="R-EU_" device="0207/7" value="10k"/>
 <part name="C17" library="rcl" deviceset="C-EU" device="025-025X050" value="10n"/>
-<part name="U$2" library="BillPorter" deviceset="IFD95" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="+5V" device=""/>
 <part name="R13" library="rcl" deviceset="R-EU_" device="0207/7" value="1k"/>
 <part name="SUPPLY10" library="supply2" deviceset="+5V" device=""/>
@@ -19554,7 +19552,6 @@ adjustable filter coil, type K</description>
 <part name="R18" library="rcl" deviceset="R-EU_" device="0207/7" value="470R"/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
-<part name="U$3" library="driver" deviceset="TL3116" device=""/>
 <part name="R19" library="rcl" deviceset="R-EU_" device="0207/7" value="1k"/>
 <part name="R20" library="rcl" deviceset="R-EU_" device="0207/7" value="470R"/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
@@ -19584,7 +19581,6 @@ adjustable filter coil, type K</description>
 <part name="SUPPLY14" library="supply2" deviceset="+5V" device=""/>
 <part name="SUPPLY15" library="supply2" deviceset="+5V" device=""/>
 <part name="TP1" library="testpad" deviceset="TPS" device="TP20R"/>
-<part name="U$4" library="driver" deviceset="LM311N" device=""/>
 <part name="L1" library="UD27" deviceset="71K1-" device="2-4"/>
 <part name="GND30" library="supply1" deviceset="GND" device=""/>
 <part name="GND31" library="supply1" deviceset="GND" device=""/>
@@ -19594,6 +19590,10 @@ adjustable filter coil, type K</description>
 <part name="R25" library="rcl" deviceset="R-EU_" device="0207/7" value="470R"/>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY16" library="supply2" deviceset="+5V" device=""/>
+<part name="IC6" library="driver" deviceset="LM311N" device=""/>
+<part name="IC7" library="driver" deviceset="TL3116" device=""/>
+<part name="IC8" library="driver" deviceset="UCC27423" device=""/>
+<part name="OP1" library="BillPorter" deviceset="IFD95" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19625,7 +19625,6 @@ adjustable filter coil, type K</description>
 <instance part="IC3" gate="E" x="93.98" y="25.4"/>
 <instance part="IC5" gate="A" x="71.12" y="-25.4"/>
 <instance part="IC5" gate="B" x="137.16" y="30.48"/>
-<instance part="U$1" gate="G$1" x="167.64" y="-22.86"/>
 <instance part="Q1" gate="G$1" x="228.6" y="5.08"/>
 <instance part="Q3" gate="G$1" x="228.6" y="15.24"/>
 <instance part="D1" gate="G$1" x="213.36" y="22.86" rot="R90"/>
@@ -19678,7 +19677,6 @@ adjustable filter coil, type K</description>
 <instance part="D9" gate="G$1" x="78.74" y="35.56" rot="R180"/>
 <instance part="R12" gate="G$1" x="78.74" y="25.4"/>
 <instance part="C17" gate="G$1" x="83.82" y="22.86"/>
-<instance part="U$2" gate="G$1" x="-40.64" y="22.86"/>
 <instance part="SUPPLY9" gate="+5V" x="-40.64" y="40.64"/>
 <instance part="R13" gate="G$1" x="-22.86" y="33.02" rot="R270"/>
 <instance part="SUPPLY10" gate="+5V" x="-22.86" y="40.64"/>
@@ -19699,7 +19697,6 @@ adjustable filter coil, type K</description>
 <instance part="R18" gate="G$1" x="38.1" y="58.42" rot="R90"/>
 <instance part="GND17" gate="1" x="27.94" y="48.26"/>
 <instance part="GND18" gate="1" x="38.1" y="48.26"/>
-<instance part="U$3" gate="G$1" x="101.6" y="63.5"/>
 <instance part="R19" gate="G$1" x="88.9" y="76.2" rot="R90"/>
 <instance part="R20" gate="G$1" x="88.9" y="53.34" rot="R90"/>
 <instance part="GND19" gate="1" x="88.9" y="45.72"/>
@@ -19735,7 +19732,6 @@ adjustable filter coil, type K</description>
 <instance part="SUPPLY14" gate="+5V" x="-43.18" y="-53.34"/>
 <instance part="SUPPLY15" gate="+5V" x="-35.56" y="-53.34"/>
 <instance part="TP1" gate="G$1" x="15.24" y="-25.4"/>
-<instance part="U$4" gate="G$1" x="22.86" y="-30.48"/>
 <instance part="L1" gate="G$1" x="-5.08" y="81.788" smashed="yes">
 <attribute name="NAME" x="-10.16" y="81.788" size="1.778" layer="95"/>
 <attribute name="VALUE" x="1.778" y="77.724" size="1.778" layer="96" rot="R90"/>
@@ -19749,6 +19745,10 @@ adjustable filter coil, type K</description>
 <instance part="R25" gate="G$1" x="96.52" y="-12.7"/>
 <instance part="GND32" gate="1" x="109.22" y="-22.86"/>
 <instance part="SUPPLY16" gate="+5V" x="91.44" y="0"/>
+<instance part="IC6" gate="G$1" x="22.86" y="-30.48"/>
+<instance part="IC7" gate="G$1" x="101.6" y="63.5"/>
+<instance part="IC8" gate="G$1" x="167.64" y="-22.86"/>
+<instance part="OP1" gate="G$1" x="-40.64" y="22.86"/>
 </instances>
 <busses>
 </busses>
@@ -19811,17 +19811,17 @@ adjustable filter coil, type K</description>
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
 <wire x1="157.48" y1="-22.86" x2="154.94" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="-22.86" x2="154.94" y2="-33.02" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
+<pinref part="IC8" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="22.86" y1="-55.88" x2="22.86" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="-38.1" x2="25.4" y2="-38.1" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="GND"/>
-<pinref part="U$4" gate="G$1" pin="V-"/>
+<pinref part="IC6" gate="G$1" pin="GND"/>
+<pinref part="IC6" gate="G$1" pin="V-"/>
 <junction x="22.86" y="-38.1"/>
 </segment>
 <segment>
@@ -19855,11 +19855,11 @@ adjustable filter coil, type K</description>
 <junction x="83.82" y="7.62"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="GND"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 <pinref part="C18" gate="G$1" pin="2"/>
 <wire x1="-40.64" y1="7.62" x2="-55.88" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="7.62" x2="-55.88" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="OP1" gate="G$1" pin="GND"/>
 <junction x="-40.64" y="7.62"/>
 </segment>
 <segment>
@@ -19892,11 +19892,11 @@ adjustable filter coil, type K</description>
 <pinref part="GND19" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="GND"/>
-<pinref part="U$3" gate="G$1" pin="V-"/>
 <wire x1="101.6" y1="55.88" x2="99.06" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 <wire x1="99.06" y1="55.88" x2="99.06" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="IC7" gate="G$1" pin="GND"/>
+<pinref part="IC7" gate="G$1" pin="V-"/>
 <junction x="99.06" y="55.88"/>
 </segment>
 <segment>
@@ -19905,10 +19905,10 @@ adjustable filter coil, type K</description>
 <pinref part="GND21" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="LEN"/>
 <pinref part="GND22" gate="1" pin="GND"/>
 <wire x1="101.6" y1="71.12" x2="111.76" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="71.12" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="IC7" gate="G$1" pin="LEN"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="P" pin="GND"/>
@@ -20022,21 +20022,21 @@ adjustable filter coil, type K</description>
 <junction x="53.34" y="114.3"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VDD"/>
 <wire x1="190.5" y1="-22.86" x2="193.04" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="-22.86" x2="193.04" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="ENB"/>
 <wire x1="193.04" y1="-12.7" x2="190.5" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="-12.7" x2="193.04" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="193.04" y="-12.7"/>
 <wire x1="193.04" y1="-5.08" x2="172.72" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="-5.08" x2="154.94" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="-5.08" x2="154.94" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="ENA"/>
 <wire x1="154.94" y1="-12.7" x2="157.48" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="SUPPLY6" gate="G$1" pin="+9V"/>
 <wire x1="172.72" y1="2.54" x2="172.72" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="172.72" y="-5.08"/>
+<pinref part="IC8" gate="G$1" pin="ENA"/>
+<pinref part="IC8" gate="G$1" pin="VDD"/>
+<pinref part="IC8" gate="G$1" pin="ENB"/>
 </segment>
 <segment>
 <wire x1="22.86" y1="-22.86" x2="22.86" y2="-17.78" width="0.1524" layer="91"/>
@@ -20048,7 +20048,7 @@ adjustable filter coil, type K</description>
 <pinref part="C15" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="-10.16" x2="22.86" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="22.86" y="-10.16"/>
-<pinref part="U$4" gate="G$1" pin="V+"/>
+<pinref part="IC6" gate="G$1" pin="V+"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -20079,11 +20079,11 @@ adjustable filter coil, type K</description>
 <junction x="40.64" y="-20.32"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="VCC"/>
 <pinref part="SUPPLY9" gate="+5V" pin="+5V"/>
 <pinref part="C18" gate="G$1" pin="1"/>
 <wire x1="-55.88" y1="25.4" x2="-55.88" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="38.1" x2="-40.64" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="OP1" gate="G$1" pin="VCC"/>
 <junction x="-40.64" y="38.1"/>
 </segment>
 <segment>
@@ -20095,7 +20095,6 @@ adjustable filter coil, type K</description>
 <pinref part="SUPPLY11" gate="+5V" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="V+"/>
 <wire x1="99.06" y1="71.12" x2="99.06" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="R19" gate="G$1" pin="2"/>
 <wire x1="99.06" y1="81.28" x2="88.9" y2="81.28" width="0.1524" layer="91"/>
@@ -20105,6 +20104,7 @@ adjustable filter coil, type K</description>
 <wire x1="88.9" y1="81.28" x2="78.74" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="81.28" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
 <junction x="88.9" y="81.28"/>
+<pinref part="IC7" gate="G$1" pin="V+"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="P" pin="VCC"/>
@@ -20289,7 +20289,7 @@ adjustable filter coil, type K</description>
 <junction x="0" y="-33.02"/>
 <junction x="7.62" y="-33.02"/>
 <wire x1="7.62" y1="-33.02" x2="17.78" y2="-33.02" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="-IN"/>
+<pinref part="IC6" gate="G$1" pin="-IN"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -20317,8 +20317,8 @@ adjustable filter coil, type K</description>
 <segment>
 <wire x1="25.4" y1="-22.86" x2="33.02" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="-22.86" x2="33.02" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="ON/STR"/>
-<pinref part="U$4" gate="G$1" pin="ON"/>
+<pinref part="IC6" gate="G$1" pin="ON/STR"/>
+<pinref part="IC6" gate="G$1" pin="ON"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -20338,7 +20338,7 @@ adjustable filter coil, type K</description>
 <pinref part="TP1" gate="G$1" pin="PP"/>
 <wire x1="15.24" y1="-27.94" x2="17.78" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="15.24" y="-27.94"/>
-<pinref part="U$4" gate="G$1" pin="+IN"/>
+<pinref part="IC6" gate="G$1" pin="+IN"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -20347,9 +20347,9 @@ adjustable filter coil, type K</description>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="-30.48" x2="40.64" y2="-30.48" width="0.1524" layer="91"/>
 <junction x="40.64" y="-30.48"/>
-<pinref part="U$4" gate="G$1" pin="OUT"/>
 <pinref part="IC5" gate="A" pin="CLR"/>
 <wire x1="40.64" y1="-30.48" x2="58.42" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="IC6" gate="G$1" pin="OUT"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -20466,20 +20466,20 @@ adjustable filter coil, type K</description>
 <pinref part="IC4" gate="A" pin="I0"/>
 <wire x1="139.7" y1="68.58" x2="132.08" y2="68.58" width="0.1524" layer="91"/>
 <junction x="132.08" y="68.58"/>
-<pinref part="U$3" gate="G$1" pin="!OUT"/>
 <wire x1="109.22" y1="66.04" x2="132.08" y2="66.04" width="0.1524" layer="91"/>
 <junction x="132.08" y="66.04"/>
+<pinref part="IC7" gate="G$1" pin="!OUT"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="OUTPUT"/>
 <pinref part="IC3" gate="A" pin="I"/>
 <wire x1="-25.4" y1="22.86" x2="-22.86" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="-22.86" y1="22.86" x2="-17.78" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="27.94" x2="-22.86" y2="22.86" width="0.1524" layer="91"/>
 <junction x="-22.86" y="22.86"/>
+<pinref part="OP1" gate="G$1" pin="OUTPUT"/>
 </segment>
 </net>
 <net name="N$35" class="0">
@@ -20548,7 +20548,7 @@ adjustable filter coil, type K</description>
 <wire x1="33.02" y1="86.36" x2="55.88" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="86.36" x2="55.88" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="60.96" x2="93.98" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="-IN"/>
+<pinref part="IC7" gate="G$1" pin="-IN"/>
 </segment>
 </net>
 <net name="N$41" class="0">
@@ -20585,28 +20585,27 @@ adjustable filter coil, type K</description>
 <junction x="116.84" y="96.52"/>
 <pinref part="R20" gate="G$1" pin="2"/>
 <wire x1="88.9" y1="58.42" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="+IN"/>
 <wire x1="88.9" y1="66.04" x2="93.98" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="R19" gate="G$1" pin="1"/>
 <wire x1="88.9" y1="71.12" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
 <junction x="88.9" y="66.04"/>
 <wire x1="83.82" y1="66.04" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="IC7" gate="G$1" pin="+IN"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <wire x1="149.86" y1="20.32" x2="149.86" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="INB"/>
 <wire x1="149.86" y1="-27.94" x2="157.48" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="20.32" x2="167.64" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="20.32" x2="167.64" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="IC4" gate="A" pin="O"/>
 <wire x1="167.64" y1="66.04" x2="154.94" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="IC8" gate="G$1" pin="INB"/>
 </segment>
 </net>
 <net name="N$36" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="OUTA"/>
 <wire x1="190.5" y1="-17.78" x2="198.12" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="G"/>
 <pinref part="C14" gate="G$1" pin="2"/>
@@ -20615,11 +20614,11 @@ adjustable filter coil, type K</description>
 <junction x="213.36" y="-43.18"/>
 <wire x1="198.12" y1="-43.18" x2="213.36" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="-17.78" x2="198.12" y2="-43.18" width="0.1524" layer="91"/>
+<pinref part="IC8" gate="G$1" pin="OUTA"/>
 </segment>
 </net>
 <net name="N$42" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="OUTB"/>
 <wire x1="190.5" y1="-27.94" x2="195.58" y2="-27.94" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="G"/>
 <pinref part="C10" gate="G$1" pin="2"/>
@@ -20628,17 +20627,18 @@ adjustable filter coil, type K</description>
 <wire x1="195.58" y1="2.54" x2="213.36" y2="2.54" width="0.1524" layer="91"/>
 <junction x="213.36" y="2.54"/>
 <wire x1="195.58" y1="-27.94" x2="195.58" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="IC8" gate="G$1" pin="OUTB"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="INA"/>
 <wire x1="157.48" y1="-17.78" x2="152.4" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="-17.78" x2="152.4" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="17.78" x2="152.4" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="IC4" gate="B" pin="O"/>
 <wire x1="154.94" y1="81.28" x2="170.18" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="81.28" x2="170.18" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="IC8" gate="G$1" pin="INA"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -20650,7 +20650,6 @@ adjustable filter coil, type K</description>
 <wire x1="124.46" y1="76.2" x2="124.46" y2="78.74" width="0.1524" layer="91"/>
 <junction x="124.46" y="76.2"/>
 <wire x1="124.46" y1="76.2" x2="124.46" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="OUT"/>
 <wire x1="109.22" y1="63.5" x2="124.46" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="IC5" gate="B" pin="Q"/>
 <wire x1="149.86" y1="35.56" x2="152.4" y2="35.56" width="0.1524" layer="91"/>
@@ -20665,6 +20664,7 @@ adjustable filter coil, type K</description>
 <junction x="134.62" y="63.5"/>
 <wire x1="124.46" y1="63.5" x2="134.62" y2="63.5" width="0.1524" layer="91"/>
 <junction x="124.46" y="63.5"/>
+<pinref part="IC7" gate="G$1" pin="OUT"/>
 </segment>
 </net>
 <net name="N$15" class="0">
