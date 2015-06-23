@@ -19484,11 +19484,11 @@ adjustable filter coil, type K</description>
 <part name="Q1" library="transistor-power" deviceset="PMOSFET_N" device="TO220BV"/>
 <part name="Q3" library="transistor-power" deviceset="PMOSFET_P" device="TO220BV"/>
 <part name="D1" library="diode" deviceset="1N4148" device="DO35-7"/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="0207/7" value="470R"/>
-<part name="C7" library="rcl" deviceset="C-EU" device="025-025X050" value="100n"/>
-<part name="C8" library="rcl" deviceset="C-EU" device="025-025X050" value="100n"/>
-<part name="R4" library="rcl" deviceset="R-EU_" device="0207/7" value="470R"/>
-<part name="C9" library="rcl" deviceset="C-EU" device="025-025X050" value="100n"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="0207/7" value="1k"/>
+<part name="C7" library="rcl" deviceset="C-EU" device="025-025X050" value="4.7u"/>
+<part name="C8" library="rcl" deviceset="C-EU" device="025-025X050" value="2.2u"/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="0207/7" value="15"/>
+<part name="C9" library="rcl" deviceset="C-EU" device="025-025X050" value="1u"/>
 <part name="C10" library="rcl" deviceset="C-EU" device="025-025X050" value="100n"/>
 <part name="SUPPLY4" library="supply2" deviceset="+24V" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
@@ -19496,8 +19496,8 @@ adjustable filter coil, type K</description>
 <part name="Q2" library="transistor-power" deviceset="PMOSFET_N" device="TO220BV"/>
 <part name="Q4" library="transistor-power" deviceset="PMOSFET_P" device="TO220BV"/>
 <part name="D2" library="diode" deviceset="1N4148" device="DO35-7"/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="0207/7" value="470R"/>
-<part name="C11" library="rcl" deviceset="C-EU" device="025-025X050" value="100n"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="0207/7" value="1k"/>
+<part name="C11" library="rcl" deviceset="C-EU" device="025-025X050" value="4.7u"/>
 <part name="C14" library="rcl" deviceset="C-EU" device="025-025X050" value="100n"/>
 <part name="SUPPLY5" library="supply2" deviceset="+24V" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
@@ -19508,20 +19508,20 @@ adjustable filter coil, type K</description>
 <part name="D4" library="diode" deviceset="DIODE-" device="D-7.5"/>
 <part name="D5" library="diode" deviceset="DIODE-" device="D-7.5"/>
 <part name="D6" library="diode" deviceset="DIODE-" device="D-7.5"/>
-<part name="C12" library="rcl" deviceset="C-EU" device="025-025X050" value="100n"/>
-<part name="R5" library="rcl" deviceset="R-EU_" device="0309/12" value="470R"/>
+<part name="C12" library="rcl" deviceset="C-EU" device="025-025X050" value="1n"/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="0309/12" value="5.1"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="+9V" device=""/>
-<part name="R6" library="rcl" deviceset="R-TRIMM" device="64W"/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="0207/7" value="470R"/>
-<part name="C13" library="rcl" deviceset="C-EU" device="025-025X050" value="100n"/>
+<part name="R6" library="rcl" deviceset="R-TRIMM" device="64W" value="10k"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="0207/7" value="1.8k"/>
+<part name="C13" library="rcl" deviceset="C-EU" device="025-025X050" value="1u"/>
 <part name="C15" library="rcl" deviceset="C-EU" device="025-025X050" value="100n"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="C16" library="rcl" deviceset="C-EU" device="025-025X050" value="100n"/>
-<part name="R8" library="rcl" deviceset="R-EU_" device="0207/7" value="470R"/>
+<part name="C16" library="rcl" deviceset="C-EU" device="025-025X050" value="1n"/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="0207/7" value="1k"/>
 <part name="SUPPLY8" library="supply2" deviceset="+5V" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="R9" library="rcl" deviceset="R-EU_" device="0207/7" value="470R"/>
+<part name="R9" library="rcl" deviceset="R-EU_" device="0207/7" value="1k"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="D7" library="diode" deviceset="DIODE-" device="D-7.5"/>
 <part name="LED2" library="led" deviceset="LED" device="3MM" value="RED"/>
@@ -19531,41 +19531,41 @@ adjustable filter coil, type K</description>
 <part name="LED3" library="led" deviceset="LED" device="3MM" value="YELLOW"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="D9" library="diode" deviceset="DIODE-" device="D-7.5"/>
-<part name="R12" library="rcl" deviceset="R-EU_" device="0207/7" value="470R"/>
-<part name="C17" library="rcl" deviceset="C-EU" device="025-025X050" value="100n"/>
+<part name="R12" library="rcl" deviceset="R-EU_" device="0207/7" value="10k"/>
+<part name="C17" library="rcl" deviceset="C-EU" device="025-025X050" value="10n"/>
 <part name="U$2" library="BillPorter" deviceset="IFD95" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="+5V" device=""/>
-<part name="R13" library="rcl" deviceset="R-EU_" device="0207/7" value="470R"/>
+<part name="R13" library="rcl" deviceset="R-EU_" device="0207/7" value="1k"/>
 <part name="SUPPLY10" library="supply2" deviceset="+5V" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="C18" library="rcl" deviceset="C-EU" device="025-025X050" value="100n"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
-<part name="R14" library="rcl" deviceset="R-EU_" device="0309/12" value="470R"/>
+<part name="R14" library="rcl" deviceset="R-EU_" device="0309/12" value="51"/>
 <part name="SV2" library="con-lstb" deviceset="MA03-1" device=""/>
-<part name="C19" library="rcl" deviceset="C-EU" device="025-025X050" value="100n"/>
-<part name="R15" library="rcl" deviceset="R-EU_" device="0207/7" value="470R"/>
+<part name="C19" library="rcl" deviceset="C-EU" device="025-025X050" value="150p"/>
+<part name="R15" library="rcl" deviceset="R-EU_" device="0207/7" value="100k"/>
 <part name="C20" library="rcl" deviceset="C-EU" device="025-025X050" value="100n"/>
-<part name="R16" library="rcl" deviceset="R-EU_" device="0207/7" value="470R"/>
+<part name="R16" library="rcl" deviceset="R-EU_" device="0207/7" value="1k"/>
 <part name="D8" library="diode" deviceset="DIODE-" device="D-7.5"/>
 <part name="D10" library="diode" deviceset="DIODE-" device="D-7.5"/>
 <part name="C21" library="rcl" deviceset="C-EU" device="025-025X050" value="100n"/>
-<part name="R17" library="rcl" deviceset="R-EU_" device="0207/7" value="470R"/>
+<part name="R17" library="rcl" deviceset="R-EU_" device="0207/7" value="1k"/>
 <part name="SUPPLY11" library="supply2" deviceset="+5V" device=""/>
 <part name="R18" library="rcl" deviceset="R-EU_" device="0207/7" value="470R"/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="U$3" library="driver" deviceset="TL3116" device=""/>
-<part name="R19" library="rcl" deviceset="R-EU_" device="0207/7" value="470R"/>
+<part name="R19" library="rcl" deviceset="R-EU_" device="0207/7" value="1k"/>
 <part name="R20" library="rcl" deviceset="R-EU_" device="0207/7" value="470R"/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY12" library="supply2" deviceset="+5V" device=""/>
-<part name="C22" library="rcl" deviceset="C-EU" device="025-025X050" value="100n"/>
+<part name="C22" library="rcl" deviceset="C-EU" device="025-025X050" value="1u"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="R21" library="rcl" deviceset="R-EU_" device="0207/7" value="470R"/>
-<part name="R22" library="rcl" deviceset="R-EU_" device="0207/7" value="470R"/>
-<part name="C23" library="rcl" deviceset="C-EU" device="025-025X050" value="100n"/>
+<part name="R22" library="rcl" deviceset="R-EU_" device="0207/7" value="100k"/>
+<part name="C23" library="rcl" deviceset="C-EU" device="025-025X050" value="1n"/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="JP3" library="pinhead" deviceset="PINHD-1X2" device=""/>
